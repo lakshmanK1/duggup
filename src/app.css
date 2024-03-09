@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+@layer components{
+    .timeline{
+        @apply
+        border-l-4 border-gray-200 border-dashed
+        ml-0 sm:ml-3 mt-3 py-16
+        space-y-14
+    }
+
+    .dot{
+        @apply
+        absolute top-40 -left-3.5
+        bg-blue-400
+        h-6 w-6
+        rounded-full
+        border-4 border-white
+    }
+
+    .outterdot{
+        @apply
+        absolute top-1 -left-5
+        bg-blue-400
+        h-10 w-10
+        rounded-full
+        border-4 border-white
+    }
+
+    .innerdot{
+        @apply
+        absolute top-2 left-2
+        bg-white
+        h-4 w-4
+        rounded-full
+        border-4 border-white
+    }
+
+    .org{
+        @apply
+        absolute top-1 -left-40
+    }
+
+    .org-year{
+        @apply
+        absolute top-40 -left-20
+    }
+}
+
+.special-btn{
+    border: 0.5px solid rgba(77, 77, 77, 1);
+    box-shadow: 0px 4px 0px 0px rgba(77, 77, 77, 1);
+    padding: 0.5rem;
+}
+
+.hr-dashed{
+    border-bottom: 1px dashed #666666;
+    width: 80%;
+}
